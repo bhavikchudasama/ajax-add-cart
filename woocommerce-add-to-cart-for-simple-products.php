@@ -86,7 +86,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     
     function ajax_add_to_cart_simple_script() {
         wp_enqueue_script( 'add-to-cart-simple_ajax', plugins_url() . '/woocommerce-add-to-cart-for-simple-products/js/add-to-cart-simple.js', array('jquery'), '', true );
-        wp_enqueue_script( 'add-to-cart-fly-effect', plugins_url() . '/woocommerce-add-to-cart-for-simple-products/js/effect.min.js', array('jquery'), '', true );
     }
     add_action( 'wp_enqueue_scripts', 'ajax_add_to_cart_simple_script',99 );
     
